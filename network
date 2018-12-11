@@ -1,0 +1,34 @@
+
+config interface 'loopback'
+	option ifname 'lo'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+
+#config interface 'eth0'
+#	option ifname 'eth0'
+#	option proto 'static'
+#	option ipaddr '192.168.1.100'
+#	option netmask '255.255.255.0'
+#	option gateway 192.168.1.1
+
+config interface eth0 
+	option ifname eth0
+	option proto dhcp
+	option hostname wifiex4u
+config interface 'eth1'
+	option ifname 'eth1'
+	option proto 'static'
+	option ipaddr '172.16.1.1'
+	option netmask '255.255.255.0'
+	option dns 8.8.8.8 4.2.2.2
+
+
+#config route
+#	option interface eth0
+#        option target 0.0.0.0
+#        option netmask 0.0.0.0
+#        option gateway 192.168.1.1
+
+
+
